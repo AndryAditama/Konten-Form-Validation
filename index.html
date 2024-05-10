@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Validation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="form-box">
+        <div class="form-field">
+            <h2>LOGIN</h2>
+            <form action="">
+                <div class="form-input">
+                    <ion-icon name="mail"></ion-icon>
+                    <input type="text" id="email" autocomplete="off" required>
+                    <label for="email">Email</label>
+                    <span id="email-validation"></span>
+                </div>
+                <div class="form-input">
+                    <ion-icon name="eye" id="eye-icon" class="eye-icon-on"></ion-icon>
+                    <input type="password" id="password" title="
+                    Password min-8 characters
+At least 1 number (0-9)
+At least 1 lowercase letter (a-z)
+At least 1 uppercase letter (A-Z)
+At least 1 symbol" required>
+                    <label for="password">Password</label>
+                    <input type="checkbox" name="" id="password-check">
+                    <span id="password-validation"></span>
+                </div>
+                <div class="forget">
+                    <label for="remember">
+                        <input type="checkbox" name="remember" id="remember">Remember Me
+                    </label>
+                    <a href="#"> Forget Password?</a>
+                </div>
+                <button class="btn-login">Login</button>
+                <div class="register">
+                    <p>Don't have account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
